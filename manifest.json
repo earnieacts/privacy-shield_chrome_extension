@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Privacy Shield",
+    "version": "1.0",
+    "description": "Enhance your privacy by blocking trackers, preventing fingerprinting, and spoofing data.",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "declarativeNetRequest",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "./js/background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "./assets/icon.png"
+    },
+    "icons": {
+        "500": "./assets/icon.png",
+        "48": "./assets/icon48.png",
+        "128": "./assets/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["./js/content.js"]
+      }
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+  }
+  
