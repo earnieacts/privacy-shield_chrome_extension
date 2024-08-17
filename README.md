@@ -1,4 +1,4 @@
-# Privacy Shield Chrome Extension
+# 🛡️ Privacy Shield Chrome Extension 
 
 Privacy Shield is a Chrome extension designed to enhance your privacy while browsing the web. It automatically blocks trackers, prevents fingerprinting, and spoofs data like location or user-agent. The extension also features a real-time privacy score that shows how protected you are on each website you visit.
 
@@ -9,7 +9,7 @@ Privacy Shield is a Chrome extension designed to enhance your privacy while brow
 - **Data Spoofing**: Spoofs sensitive information like location and user-agent to enhance anonymity.
 - **Real-Time Privacy Score**: Displays a privacy score in real-time, showing how protected you are on each website.
 
-## Installation
+## 🚀 Installation
 
 1. Clone this repository to your local machine:
 
@@ -23,31 +23,7 @@ Click "Load unpacked" and select the directory where you cloned this repository.
 
 The Privacy Shield extension should now be installed and visible in your Chrome toolbar.
 
-## Usage
-Click on the Privacy Shield icon in the Chrome toolbar to view your real-time privacy score.
-Use the "View Details" button to see more information about how the current website is handling your privacy.
-Click on "Settings" to adjust your privacy preferences and configure how the extension protects you.
-
-File Structure
-privacy-shield/
-privacy-shield/
-│
-├── css/
-│ └── styles.css # CSS for the popup interface
-│
-├── js/
-│ └── popup.js # JavaScript for the popup interface
-│
-├── assets/
-│ ├── icon.png # 500x500 icon for the extension
-│ ├── icon48.png # 48x48 icon for the extension
-│ └── icon128.png # 128x128 icon for the extension
-│
-├── manifest.json # Chrome extension manifest file
-├── popup.html # HTML for the popup interface
-└── README.md # Project documentation
-
-## Development
+## 💪 Development
 
 # Prerequisites
 * Google Chrome: Required to test and load the extension.
