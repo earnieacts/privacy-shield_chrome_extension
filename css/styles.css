@@ -51,6 +51,19 @@ header h1 {
     /* base font size */
     font-size: 1.5rem;
 }
+    .score-container {
+        border-radius: 15px;
+        margin: 20px auto;
+        padding: 30px 0 20px 0;
+        box-shadow: 2px 2px 3px 2px  #d7d7d7;
+        width: 250px;
+        height: 180px;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
 .score-container p {
     font-size: 2rem;   /* bigger description text */
@@ -136,4 +149,81 @@ footer a{
     .button {
         font-size: 0.9rem;
     }
+}
+
+/* Circle Progress Bar Styles */
+.circle-progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    width: 120px;
+    height: 120px;
+    margin: 30px auto;
+}
+
+.circle-progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    width: 120px;
+    height: 120px;
+    margin: 0;
+}
+
+.circle-progress {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    /* Start progress at top */
+    transform: rotate(-90deg); 
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 12;
+}
+
+.circle-bar {
+    fill: none;
+    stroke: #28a745;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 339.292; /* 2 * PI * r (r=54) */
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.7s ease;
+}
+
+.circle-score {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+#privacy-score {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #28a745;
+    line-height: 1;
+}
+
+.circle-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 2px;
+    padding-bottom: 10px;
 }

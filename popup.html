@@ -20,9 +20,19 @@
             <h1>Privacy Shield</h1>
         </header>
 
+        <!-- FOR CIRCLE PROGRESS BAR -->
         <div class="score-container">
-            <p>Your Privacy Score:</p>
-            <div id="score" class="score">Calculating...</div>
+            <span class="circle-label">Privacy Score</span>
+            <div class="circle-progress-container">
+                <svg class="circle-progress" width="120" height="120">
+                <circle class="circle-bg" cx="60" cy="60" r="54" />
+                <circle class="circle-bar" cx="60" cy="60" r="54" />
+                </svg>
+
+                <div class="circle-score">
+                <span id="privacy-score">100</span>
+                </div>
+            </div>
         </div>
 
         <div class="actions">
