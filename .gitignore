@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Claude Code — local agents, skills, and settings (not shared)
+.claude/
+
+# Build / packaging output
+dist/
+*.zip
+*.crx
+*.pem
+
+# Node (if tooling is added later)
+node_modules/
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
